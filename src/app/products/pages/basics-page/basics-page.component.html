@@ -31,6 +31,9 @@
       <ol>
         <li>fecha | date:'long':'GMT-6'</li>
         <li>fecha | date:'long':'GMT-4'</li>
+        <li>fecha | date:'long':'':'es-CO'</li>
+        <li>fecha | date:'long':'':'en-US'</li>
+        <li>fecha | date:'long':'':'Fr-CA'</li>
       </ol>
     </p-card>
   </div>
@@ -39,6 +42,7 @@
     <p-card header="titlecase">
       <ol>
         <li>{{ customDate }}</li>
+        <li>{{ customDate | date }}</li>
         <li>{{ customDate | date : "short" }}</li>
         <li>{{ customDate | date : "long" }}</li>
         <li>{{ customDate | date : "MMMM" }}</li>
@@ -50,6 +54,9 @@
       <ol>
         <li>{{ customDate | date:'long':'GMT-6' }}</li>
         <li>{{ customDate | date:'long':'GMT-4' }}</li>
+        <li>{{ customDate | date:'long':'':'es-CO' }}</li>
+        <li>{{ customDate | date:'long':'':'en-US' }}</li>
+        <li>{{ customDate | date:'long':'':'fr-CA' }}</li>
       </ol>
     </p-card>
   </div>
