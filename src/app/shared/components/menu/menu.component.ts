@@ -11,14 +11,34 @@ export class MenuComponent {
 
   ngOnInit() {
     this.menuItems = [
-      { label: 'New', icon: 'pi pi-plus', url: 'https://primeng.org' },
-      { label: 'Open', icon: 'pi pi-download', routerLink: ['/menu'] },
       {
-        label: 'Recent Files',
-        icon: 'pi pi-download',
-        routerLink: ['/pagename'],
-        queryParams: { recent: 'true' },
+        label: 'Pipes de Angular',
+        icon: 'pi pi-desktop',
+        items: [
+          {
+            label: 'Texto y Fechas',
+            icon: 'pi pi-align-left'
+          },
+          {
+            label: 'Numeros',
+            icon: 'pi pi-dollar'
+          },
+          {
+            label: 'No comunes',
+            icon: 'pi pi-globe',
+          },
+        ]
       },
+      {
+        label: 'Pipes personalizados',
+        icon: 'pi pi-cog',
+        items: [
+          {
+          label: 'Otro elemento',
+          icon: 'pi pi-cog',
+          }
+        ]
+      }
     ];
   }
 }
